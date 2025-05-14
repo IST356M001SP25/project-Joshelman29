@@ -25,4 +25,32 @@ This tool is designed to support emergency planners, researchers, and the genera
 ### How you run my project
 
 
+This project provides interactive dashboards for exploring storm event data in the United States. It includes tools to visualize injuries, deaths, and property/crop damages by **state**, **storm type**, and on a **US map**. First, install the required Python packages: using this command `pip install -r requirements.txt`. Run the data processing script to clean and prepare the storm dataset
+using this command: `python get_data.py`
+
+This script
+
+* Loads storm data from `cache/storm_data_2024.csv`
+* Filters required columns and valid state FIPS codes
+* Converts damage fields to numeric USD values
+* Merges state-level coordinate data
+* Outputs cleaned data to `cache/storm_data_2024_filtered.csv`
+
+
+### Visualize by State
+
+You can launch any of the dashboards using Streamlit using this command `streamlit run states_dashboard.py`. The dashboard compares multiple states, Select metric (injuries, deaths, damages) by visualizing Line plot by month and barplot of Total values by state (bar plot)
+
+
+
+###  Visualize by Storm Type
+
+The dashboard for storm type can be initiated by running `streamlit run storm_dashboard.py`. This interactive dashboard compares multiple storm types by Select metric (injuries, deaths, damages) and visualize lineplot of totals by Monthly trends. 
+
+
+###  Visualize on US Map
+To visualize interactive map run this script `streamlit run map_dashboard.py`. You can View total injuries, deaths, or damages by state in a choropleth map. 
+
+
+
 ### Other things you need to know

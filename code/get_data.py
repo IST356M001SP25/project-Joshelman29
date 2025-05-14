@@ -1,8 +1,5 @@
 import os
 import pandas as pd
-import requests
-import gzip
-import shutil
 from typing import List, Union
 
 
