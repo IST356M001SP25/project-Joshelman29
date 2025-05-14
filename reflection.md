@@ -1,7 +1,7 @@
 # Reflection
 
-Student Name:  name
-Student Email:  email
+Student Name:  josh elman
+Student Email:  jdelman@syr.edu
 
 ## Instructions
 
@@ -23,3 +23,4 @@ Examples:
 
 `--- Reflection Below This Line ---`
 
+In this project, we learned how to build a complete data pipeline and interactive visualization tool for storm event data in the U.S. We started by cleaning and preparing the raw dataset—learning to select relevant columns, handle missing or malformed values, convert textual damage representations to numerical values, and filter valid entries using state FIPS codes. We wrote modular helper functions to make our code reusable and easier to maintain. On the visualization side, we explored how to use Streamlit to build interactive dashboards that let users select states or storm types, dynamically choose between metrics like injuries, deaths, or damages, and view trends over time using line plots, bar charts, and geographic maps. This project strengthened our skills in data cleaning, function design, and building data-driven web applications for interactive analysis.
